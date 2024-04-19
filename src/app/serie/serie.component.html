@@ -1,0 +1,27 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Channel</th>
+      <th>Seasons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let serie of series">
+      <td>
+        <dd><strong>{{ serie.id }}</strong></dd>
+      </td>
+      <td>
+        <dd class="blue-text">{{ serie.name }}</dd>
+      </td>
+      <td>
+        <dd>{{ serie.channel }}</dd>
+      </td>
+      <td>
+        <dd>{{ serie.seasons }}</dd>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h6>Seasons average: <strong><mark><span>{{calculateAverageSeasons()}}</span></mark></strong></h6>
